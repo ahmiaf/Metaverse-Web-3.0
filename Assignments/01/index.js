@@ -13,7 +13,7 @@ if (option == 'Y' || option == 'y') {
         console.log("\n");
         numb1 = Number(numb1);
         numb2 = Number(numb2);
-        var expression = promptSync("\uD835\uDE0D\uD835\uDE30\uD835\uDE33 \uD835\uDE08\uD835\uDE33\uD835\uDE22\uD835\uDE35\uD835\uDE29\uD835\uDE2E\uD835\uDE22\uD835\uDE35\uD835\uDE2A\uD835\uDE24 \uD835\uDE16\uD835\uDE31\uD835\uDE33\uD835\uDE22\uD835\uDE35\uD835\uDE2A\uD835\uDE30\uD835\uDE2F \uD835\uDE1A\uD835\uDE26\uD835\uDE2D\uD835\uDE26\uD835\uDE24\uD835\uDE35 \uD835\uDE27\uD835\uDE33\uD835\uDE30\uD835\uDE2E 0 \uD835\uDE35\uD835\uDE30 9:\n    01:Addition\n    02:Subtraction\n    03:Multiplication\n    04:Division\n    05:Modulus\n    06:Increment\n    07:Decrement\n    08:Power\n    09:Square Root\n    10:Square\n    11:Cube\n    12:Cube Root\n    \n\uD835\uDE0D\uD835\uDE30\uD835\uDE33 \uD835\uDE0A\uD835\uDE30\uD835\uDE2F\uD835\uDE25\uD835\uDE2A\uD835\uDE2F\uD835\uDE35\uD835\uDE2A\uD835\uDE30\uD835\uDE2F\uD835\uDE22\uD835\uDE2D \uD835\uDE16\uD835\uDE31\uD835\uDE33\uD835\uDE22\uD835\uDE35\uD835\uDE2A\uD835\uDE30\uD835\uDE2F \uD835\uDE1A\uD835\uDE26\uD835\uDE2D\uD835\uDE26\uD835\uDE24\uD835\uDE35 \uD835\uDE27\uD835\uDE33\uD835\uDE30\uD835\uDE2E 13 \uD835\uDE35\uD835\uDE30 19:\n    13:Equal Check\n    14:Equality with Data Type Check\n    15:Enequality Check\n    16:Greater Than Check\n    17:Less Than Check\n    \n\t  OR \n\uFF11\uFF18\uFF1A \uFF25\uFF38\uFF29\uFF34 \n");
+        var expression = promptSync("\uD835\uDE0D\uD835\uDE30\uD835\uDE33 \uD835\uDE08\uD835\uDE33\uD835\uDE22\uD835\uDE35\uD835\uDE29\uD835\uDE2E\uD835\uDE22\uD835\uDE35\uD835\uDE2A\uD835\uDE24 \uD835\uDE16\uD835\uDE31\uD835\uDE33\uD835\uDE22\uD835\uDE35\uD835\uDE2A\uD835\uDE30\uD835\uDE2F \uD835\uDE1A\uD835\uDE26\uD835\uDE2D\uD835\uDE26\uD835\uDE24\uD835\uDE35 \uD835\uDE27\uD835\uDE33\uD835\uDE30\uD835\uDE2E 1 \uD835\uDE35\uD835\uDE30 12:\n    01:Addition\n    02:Subtraction\n    03:Multiplication\n    04:Division\n    05:Modulus\n    06:Increment\n    07:Decrement\n    08:Power\n    09:Square Root\n    10:Square\n    11:Cube\n    12:Cube Root\n    \n\uD835\uDE0D\uD835\uDE30\uD835\uDE33 \uD835\uDE0A\uD835\uDE30\uD835\uDE2F\uD835\uDE25\uD835\uDE2A\uD835\uDE2F\uD835\uDE35\uD835\uDE2A\uD835\uDE30\uD835\uDE2F\uD835\uDE22\uD835\uDE2D \uD835\uDE16\uD835\uDE31\uD835\uDE33\uD835\uDE22\uD835\uDE35\uD835\uDE2A\uD835\uDE30\uD835\uDE2F \uD835\uDE1A\uD835\uDE26\uD835\uDE2D\uD835\uDE26\uD835\uDE24\uD835\uDE35 \uD835\uDE27\uD835\uDE33\uD835\uDE30\uD835\uDE2E 13 \uD835\uDE35\uD835\uDE30 17:\n    13:Equal Check\n    14:Equality with Data Type Check\n    15:Enequality Check\n    16:Greater Than Check\n    17:Less Than Check\n    \n\t  OR \n\uFF11\uFF18\uFF1A \uFF25\uFF38\uFF29\uFF34 \n");
         expression = Number(expression);
         switch (expression) {
             case 1:
@@ -32,10 +32,10 @@ if (option == 'Y' || option == 'y') {
                 console.log("Modulus of ".concat(numb1, " and ").concat(numb2, " is: ").concat(numb1 % numb2));
                 break;
             case 6:
-                console.log("Increment of ".concat(numb1, " and ").concat(numb2, " is: ").concat(numb1++, " and ").concat(numb2++));
+                console.log("Increment of ".concat(numb1, " and ").concat(numb2, " is: ").concat(numb1 += 1, " and ").concat(numb2 += 1));
                 break;
             case 7:
-                console.log("Decrement of ".concat(numb1, " and ").concat(numb2, " is: ").concat(numb1--, " and ").concat(numb2--));
+                console.log("Decrement of ".concat(numb1, " and ").concat(numb2, " is: ").concat(numb1 -= 1, " and ").concat(numb2 -= 1));
                 break;
             case 8:
                 console.log("Power of ".concat(numb1, " to ").concat(numb2, " is: ").concat(Math.pow(numb1, numb2)));
