@@ -1,6 +1,7 @@
 const promptSync = require('prompt-sync')();
 console.log(`\n\n`)
-console.log(` ██████╗██╗     ██╗     ██████╗ █████╗ ██╗      ██████╗██╗   ██╗██╗      █████╗ ████████╗ ██████╗ ██████╗ 
+console.log(`
+ ██████╗██╗     ██╗     ██████╗ █████╗ ██╗      ██████╗██╗   ██╗██╗      █████╗ ████████╗ ██████╗ ██████╗ 
 ██╔════╝██║     ██║    ██╔════╝██╔══██╗██║     ██╔════╝██║   ██║██║     ██╔══██╗╚══██╔══╝██╔═══██╗██╔══██╗
 ██║     ██║     ██║    ██║     ███████║██║     ██║     ██║   ██║██║     ███████║   ██║   ██║   ██║██████╔╝
 ██║     ██║     ██║    ██║     ██╔══██║██║     ██║     ██║   ██║██║     ██╔══██║   ██║   ██║   ██║██╔══██╗
@@ -59,10 +60,10 @@ if(option == 'Y' || option == 'y'){
             console.log(`Modulus of ${numb1} and ${numb2} is: ${numb1%numb2}`)
           break;
         case 6:
-            console.log(`Increment of ${numb1} and ${numb2} is: ${numb1++} and ${numb2++}`)
+            console.log(`Increment of ${numb1} and ${numb2} is: ${numb1+=1} and ${numb2+=1}`)
           break;
         case 7:
-            console.log(`Decrement of ${numb1} and ${numb2} is: ${numb1--} and ${numb2--}`)
+            console.log(`Decrement of ${numb1} and ${numb2} is: ${numb1-=1} and ${numb2-=1}`)
           break;
         case 8:
             console.log(`Power of ${numb1} to ${numb2} is: ${numb1**numb2}`)
