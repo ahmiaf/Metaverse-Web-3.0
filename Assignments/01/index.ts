@@ -20,7 +20,7 @@ if(option == 'Y' || option == 'y'){
     console.log(`\n`)
     numb1 = Number(numb1)
     numb2 = Number(numb2)
-    let expression:number = promptSync(`𝘍𝘰𝘳 𝘈𝘳𝘢𝘵𝘩𝘮𝘢𝘵𝘪𝘤 𝘖𝘱𝘳𝘢𝘵𝘪𝘰𝘯 𝘚𝘦𝘭𝘦𝘤𝘵 𝘧𝘳𝘰𝘮 0 𝘵𝘰 12:
+    let expression:number = promptSync(`𝘍𝘰𝘳 𝘈𝘳𝘢𝘵𝘩𝘮𝘢𝘵𝘪𝘤 𝘖𝘱𝘳𝘢𝘵𝘪𝘰𝘯 𝘚𝘦𝘭𝘦𝘤𝘵 𝘧𝘳𝘰𝘮 1 𝘵𝘰 12:
     01:Addition
     02:Subtraction
     03:Multiplication
